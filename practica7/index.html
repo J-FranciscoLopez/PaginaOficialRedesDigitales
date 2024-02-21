@@ -83,11 +83,11 @@
                         </p>-->
                        <!-- <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>-->
                         
-                      <!-- <p id="intro">
+                       <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4"> La práctica1 tiene como objetivo principal el conocimiento, identificación y verificación del funcionamiento de un protocolo de comunicación, focalizado en la implementación de un contador de pulsos y un contador de tiempo en un pulso. Este proyecto se desarrolla en dos partes fundamentales: el contador de pulsos y el contador de duración de pulsos. Ambos aspectos serán abordados mediante el uso de dos placas Arduino para cada función, interconectadas para demostrar la efectividad del sistema de comunicación</p>
+                        <p class="fs-6 mb-4"> Esta actividad tiene como objetivo ofrecer a los participantes una experiencia práctica y profunda en la configuración de redes locales utilizando el programa Packet Tracer de Cisco. Los participantes simularán redes, asignarán direcciones IP (192.168.0.0) a computadoras, realizarán pruebas de conectividad con ping y registrarán visualmente el proceso mediante la grabación de videos. Más allá de reforzar conocimientos teóricos, la actividad busca desarrollar habilidades prácticas y demostrar la comprensión de conceptos de red y asignación de direcciones IP en entornos simulados.</p>
                         
-                        <p id="materiales">
+                        <!--<p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
                         <p class="fs-6 mb-4"> 2 Arduino </p>
                         <p class="fs-6 mb-4"> Protoboard</p>
@@ -100,31 +100,53 @@
                             <p class="fs-6 mb-4"> Utilizando el programa de Packet Tracer de Cisco, simula las siguientes redes de computadora, asignando a las computadoras las IP pertenecientes a la red 192.168.0.0., utilizando la ventana de comandos utiliza la función ping para verificar la comunicación entre cada una de las computadoras. Graba un video de cada red simulada.  </p>
                             <p class="fs-6 mb-4">Elabora por cada red una tabla comparativa de cada elemento de red con las siguientes características:  </p>
                             
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Circuito con dos Arduinos</p>
-
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/tabla.png" alt="..." /></figure>
                         
+                        
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/tabla.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Circuito con dos Arduinos</p>
 
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4"> Es importante destacar que, para lograr una comunicación efectiva entre ambas placas Arduino, se conectaron las tierras de ambas, garantizando así un correcto flujo de datos entre los dispositivos. Este aspecto se considera crucial para el éxito del proyecto y se mantuvo presente en todas las etapas de desarrollo y pruebas.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de pulsos:</h2>
-                        <p class="fs-6 mb-4"> Contador de pulsos:
-                            Para cumplir con el primer objetivo específico, se diseñó una función en una placa Arduino que permite enviar un número específico de pulsos a una frecuencia determinada. Esta función, denominada pulsos (int cantidad, int duración), se implementó y verificó su correcto funcionamiento utilizando un osciloscopio para analizar la señal generada.
-                            </p>
-                        <p class="fs-6 mb-4"> Asimismo, se desarrolló una segunda función en otro Arduino, con el propósito de contar el número de pulsos recibidos y mostrarlos en el monitor serial. La comunicación entre ambos Arduinos fue esencial para lograr este objetivo, y se verificó conectando un pin de cada placa para corroborar la precisión del sistema bajo distintas condiciones de frecuencia de pulsos.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos:</h2>
-                        <p class="fs-6 mb-4"> En esta etapa del proyecto, se diseñó una función en una placa Arduino que permite enviar un pulso con una duración específica en su estado alto. Esta función fue probada y su funcionamiento validado utilizando un osciloscopio para observar la señal generada.</p>
-                        <p class="fs-6 mb-4"> Para completar el segundo objetivo específico, se implementó una función en otro Arduino para medir la duración de los pulsos recibidos del primer Arduino y mostrar los resultados en el monitor serial. Esta tarea fue fundamental para analizar y comprender el tiempo de duración de los pulsos transmitidos entre las placas Arduino.</p>
-                        
+                        <p class="fs-6 mb-4"> Se hicieron las siguientes redes en Cisco </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/red1.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Red local 1</p>
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/red2.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Fig. 2. Red local 2</p>
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/red3.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Fig. 3. Red local 3</p>
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/red4.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Fig. 4. Red local 4</p>
+
+                    
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                           <p class="fs-6 mb-4" >Video de evidencia</p>
+                           <p class="fs-6 mb-4" >Videos de evidencia</p>
+
                         <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                            <source src="video/Circuito1.mp4" type="video/mp4">
+                            <source src="video/Video1.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-6 mb-4" style="text-align: center;">Video 1: práctica presencial</p>
+                        <p class="fs-6 mb-4" style="text-align: center;">Video 1: Simulación Red 1</p>
+                        <br>
+
+                        
+                        <p class="fs-6 mb-4" style="text-align: center;">Video 2: práctica presencial</p>
+                        <br>
+
+                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                            <source src="video/video 3.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Video 3: Simulación Red 3</p>
+                        <br>
+
+                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                            <source src="video/video4.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Video 4: Simulación Red 4</p>
                         <br>
                         
         
