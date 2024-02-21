@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 1:“Protocolo de Comunicación - Contador de pulsos y contador de tiempo”</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 5: Estilos de fuentes</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/brobot.jpg" alt="..." />
@@ -63,8 +63,8 @@
 
                         <div class="text-muted fst-italic mt-2 mb-2">Fecha: Primavera 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Protocolos</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Fuentes</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Pagina web</a>
          
 
                     </header>
@@ -85,55 +85,39 @@
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4"> La práctica1 tiene como objetivo principal el conocimiento, identificación y verificación del funcionamiento de un protocolo de comunicación, focalizado en la implementación de un contador de pulsos y un contador de tiempo en un pulso. Este proyecto se desarrolla en dos partes fundamentales: el contador de pulsos y el contador de duración de pulsos. Ambos aspectos serán abordados mediante el uso de dos placas Arduino para cada función, interconectadas para demostrar la efectividad del sistema de comunicación</p>
+                        <p class="fs-6 mb-4"> En esta práctica de desarrollo web, se exploró y experimentó con el funcionamiento y la aplicación de formatos de texto en una página web. El objetivo principal fue comprender cómo se manipulan diferentes aspectos del texto, como el tamaño, el estilo, el color, la alineación y la estructura del código HTML y CSS para lograr diversos efectos visuales. La página web resultante cuenta con cinco títulos distintos, cada uno con su respectivo formato de texto, seguidos por textos breves también con formatos variados. Este ejercicio proporcionó una oportunidad para familiarizarse con las capacidades de diseño y presentación que ofrece HTML y CSS.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> 2 Arduino </p>
-                        <p class="fs-6 mb-4"> Protoboard</p>
-                        <p class="fs-6 mb-4"> Botones</p>
-                        <p class="fs-6 mb-4"> LED</p>
+                        <p class="fs-6 mb-4"> Computadora y Github </p>
+                        
                         <p id="Objetivos">
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
-                            <p class="fs-6 mb-4"> Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos y un contador de tiempo en un pulso. </p>
+                            <p class="fs-6 mb-4"> En esta práctica de desarrollo web, se exploró y experimentó con el funcionamiento y la aplicación de formatos de texto en una página web. El objetivo principal fue comprender cómo se manipulan diferentes aspectos del texto, como el tamaño, el estilo, el color, la alineación y la estructura del código HTML y CSS para lograr diversos efectos visuales. La página web resultante cuenta con cinco títulos distintos, cada uno con su respectivo formato de texto, seguidos por textos breves también con formatos variados. Este ejercicio proporcionó una oportunidad para familiarizarse con las capacidades de diseño y presentación que ofrece HTML y CSS. </p>
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos Especificos -</h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
-                            <p class="fs-6 mb-4"> Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo. </p>
-                    
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos </h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
-                            
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Circuito 1 </h2>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Circuito con dos Arduinos</p>
-
+                            <p class="fs-6 mb-4"> Diseñar una página web con múltiples títulos, cada uno con un formato de texto único. </p>
+                            <p class="fs-6 mb-4"> Manipular el tamaño de fuente, estilo de fuente, color, subrayado y alineación del texto utilizando código HTML y CSS. </p>
+                            <p class="fs-6 mb-4"> Familiarizarse con la estructura del código HTML y CSS necesario para aplicar estilos de texto de manera efectiva. </p>
+                           
+           
                         
 
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4"> Es importante destacar que, para lograr una comunicación efectiva entre ambas placas Arduino, se conectaron las tierras de ambas, garantizando así un correcto flujo de datos entre los dispositivos. Este aspecto se considera crucial para el éxito del proyecto y se mantuvo presente en todas las etapas de desarrollo y pruebas.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de pulsos:</h2>
-                        <p class="fs-6 mb-4"> Contador de pulsos:
-                            Para cumplir con el primer objetivo específico, se diseñó una función en una placa Arduino que permite enviar un número específico de pulsos a una frecuencia determinada. Esta función, denominada pulsos (int cantidad, int duración), se implementó y verificó su correcto funcionamiento utilizando un osciloscopio para analizar la señal generada.
-                            </p>
-                        <p class="fs-6 mb-4"> Asimismo, se desarrolló una segunda función en otro Arduino, con el propósito de contar el número de pulsos recibidos y mostrarlos en el monitor serial. La comunicación entre ambos Arduinos fue esencial para lograr este objetivo, y se verificó conectando un pin de cada placa para corroborar la precisión del sistema bajo distintas condiciones de frecuencia de pulsos.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos:</h2>
-                        <p class="fs-6 mb-4"> En esta etapa del proyecto, se diseñó una función en una placa Arduino que permite enviar un pulso con una duración específica en su estado alto. Esta función fue probada y su funcionamiento validado utilizando un osciloscopio para observar la señal generada.</p>
-                        <p class="fs-6 mb-4"> Para completar el segundo objetivo específico, se implementó una función en otro Arduino para medir la duración de los pulsos recibidos del primer Arduino y mostrar los resultados en el monitor serial. Esta tarea fue fundamental para analizar y comprender el tiempo de duración de los pulsos transmitidos entre las placas Arduino.</p>
+                        <p class="fs-6 mb-4"> Para alcanzar el objetivo de esta práctica, se diseñó una página web con una estructura sencilla pero significativa, enfocada en la manipulación del formato de texto. A continuación, se detallan los elementos clave de la página:</p>
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Títulos con diferentes formatos:</h2>
+                        <p class="fs-6 mb-4"> Se emplearon cinco títulos distintos, cada uno con un formato único en cuanto a tamaño de fuente, estilo de fuente, color, subrayado y alineación.<br>
+                            - El código HTML y CSS asociado con cada título se estructuró de manera que permitiera aplicar los estilos de forma precisa y coherente.
+                           </p>
                         
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                           <p class="fs-6 mb-4" >Video de evidencia</p>
-                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                            <source src="video/Circuito1.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-6 mb-4" style="text-align: center;">Video 1: práctica presencial</p>
-                        <br>
+                           <p class="fs-6 mb-4" >Enlaces de evidencia</p>
                         
-        
+                           <a href="https://j-franciscolopez.github.io/jfranredesdatos/">Ir los estilos de texto de Jose Francisco Lopez</a>
+                           <a href="https://tlacuashe.github.io/REDES1/">Ir los estilos de texto de Juan Carlos Guauxochitl</a>
+                        
 
                         <!--<p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
