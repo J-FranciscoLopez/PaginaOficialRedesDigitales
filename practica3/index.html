@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 1:“Protocolo de Comunicación - Contador de pulsos y contador de tiempo”</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 3: “Protocolo de Comunicación Asíncrono”</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/brobot.jpg" alt="..." />
@@ -64,7 +64,7 @@
                         <div class="text-muted fst-italic mt-2 mb-2">Fecha: Primavera 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Protocolos</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Comunicación</a>
          
 
                     </header>
@@ -85,43 +85,42 @@
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4"> La práctica1 tiene como objetivo principal el conocimiento, identificación y verificación del funcionamiento de un protocolo de comunicación, focalizado en la implementación de un contador de pulsos y un contador de tiempo en un pulso. Este proyecto se desarrolla en dos partes fundamentales: el contador de pulsos y el contador de duración de pulsos. Ambos aspectos serán abordados mediante el uso de dos placas Arduino para cada función, interconectadas para demostrar la efectividad del sistema de comunicación</p>
+                        <p class="fs-6 mb-4"> Este informe de laboratorio se centra en el desarrollo y la verificación del funcionamiento de un protocolo de comunicación asíncrono. El objetivo principal es comprender, identificar y validar el correcto funcionamiento de este protocolo mediante la implementación de un sistema basado en dos placas Arduino. En particular, se enfoca en la conversión de un valor analógico de un potenciómetro a un arreglo de variables que representan un número en binario de 8 bits, seguido de la transmisión serial de estos datos en serie desde un Arduino emisor hacia un Arduino receptor.</p>
                         
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> 2 Arduino </p>
-                        <p class="fs-6 mb-4"> Protoboard</p>
-                        <p class="fs-6 mb-4"> Botones</p>
-                        <p class="fs-6 mb-4"> LED</p>
                         <p id="Objetivos">
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
-                            <p class="fs-6 mb-4"> Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos y un contador de tiempo en un pulso. </p>
+                            <p class="fs-6 mb-4"> Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.  </p>
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos Especificos -</h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
-                            <p class="fs-6 mb-4"> Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo. </p>
-                    
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos </h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
+                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, y los deposite en un arreglo [ ], Finalmente elaborar un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo las siguientes características:  </p>
+                            <p class="fs-6 mb-4"> Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).  </p>
+                            <p class="fs-6 mb-4"> Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms</p>
+                            <p class="fs-6 mb-4">Enviar siempre la misma cantidad de bits. </p>
+
                             
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Señal</p>
+                    
+                           
+                            <p id="materiales">
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                                <p class="fs-6 mb-4"> 2 Arduino </p>
+                                <p class="fs-6 mb-4"> Protoboard</p>
+                                <p class="fs-6 mb-4"> Botones</p>
+                                <p class="fs-6 mb-4"> LED</p>
+
                             <h2 class="fw-bolder mb-4 mt-5 fs-5"> Circuito 1 </h2>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Circuito con dos Arduinos</p>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 2. Circuito con dos Arduinos</p>
 
                         
 
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4"> Es importante destacar que, para lograr una comunicación efectiva entre ambas placas Arduino, se conectaron las tierras de ambas, garantizando así un correcto flujo de datos entre los dispositivos. Este aspecto se considera crucial para el éxito del proyecto y se mantuvo presente en todas las etapas de desarrollo y pruebas.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de pulsos:</h2>
-                        <p class="fs-6 mb-4"> Contador de pulsos:
-                            Para cumplir con el primer objetivo específico, se diseñó una función en una placa Arduino que permite enviar un número específico de pulsos a una frecuencia determinada. Esta función, denominada pulsos (int cantidad, int duración), se implementó y verificó su correcto funcionamiento utilizando un osciloscopio para analizar la señal generada.
-                            </p>
-                        <p class="fs-6 mb-4"> Asimismo, se desarrolló una segunda función en otro Arduino, con el propósito de contar el número de pulsos recibidos y mostrarlos en el monitor serial. La comunicación entre ambos Arduinos fue esencial para lograr este objetivo, y se verificó conectando un pin de cada placa para corroborar la precisión del sistema bajo distintas condiciones de frecuencia de pulsos.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos:</h2>
-                        <p class="fs-6 mb-4"> En esta etapa del proyecto, se diseñó una función en una placa Arduino que permite enviar un pulso con una duración específica en su estado alto. Esta función fue probada y su funcionamiento validado utilizando un osciloscopio para observar la señal generada.</p>
-                        <p class="fs-6 mb-4"> Para completar el segundo objetivo específico, se implementó una función en otro Arduino para medir la duración de los pulsos recibidos del primer Arduino y mostrar los resultados en el monitor serial. Esta tarea fue fundamental para analizar y comprender el tiempo de duración de los pulsos transmitidos entre las placas Arduino.</p>
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Sistema de conversión y transmisión de datos:</h2>
+                        <p class="fs-6 mb-4"> Para cumplir con el primer objetivo específico, se diseñó un sistema en un Arduino que convierte el valor analógico proporcionado por un potenciómetro en un arreglo de variables que representan un número en binario de 8 bits. Estos datos binarios se depositan en un arreglo y son enviados en serie siguiendo un protocolo específico:<br>Se inicia el envío de datos siempre con una señal HIGH, seguido de los 8 bits de información.<br> Cada bit se envía con una duración de pulso predeterminada, por ejemplo, 1000 ms. <br> Se garantiza que se envíe siempre la misma cantidad de bits. <br> Este proceso de conversión y transmisión de datos se desarrolló cuidadosamente para asegurar una comunicación efectiva y estable entre los Arduinos, demostrando así el correcto funcionamiento del protocolo asíncrono implementado.<br> </p>
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Recepción y procesamiento de datos:</h2>
+                        <p class="fs-6 mb-4"> En el segundo Arduino, se diseñó una función para recibir la señal de comunicación del Arduino emisor, adquirir los datos en bits, procesarlos y convertirlos en un dato decimal. Una vez convertidos, estos datos se envían al monitor serial para su visualización. Esta función fue crucial para demostrar la capacidad de recepción y decodificación de datos del Arduino receptor. </p>
+                        <p class="fs-6 mb-4"> Es importante destacar que, para garantizar una comunicación efectiva entre ambos Arduinos, se conectaron las tierras de ambos dispositivos, siguiendo la recomendación proporcionada en la nota adjunta. Esta conexión aseguró un flujo de datos estable y confiable entre los dispositivos, facilitando el intercambio de información necesario para el funcionamiento adecuado del protocolo de comunicación asíncrono implementado.</p>
                         
 
                         <p id="resultados">
