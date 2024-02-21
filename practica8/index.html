@@ -93,42 +93,49 @@
                          
 
 
-                        <p id="materiales">
+                       <!-- <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
                         <p class="fs-6 mb-4"> 2 Arduino </p>
                         <p class="fs-6 mb-4"> Protoboard</p>
                         <p class="fs-6 mb-4"> Botones</p>
-                        <p class="fs-6 mb-4"> LED</p>
+                        <p class="fs-6 mb-4"> LED</p>-->
                         <p id="Objetivos">
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
-                            <p class="fs-6 mb-4"> Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos y un contador de tiempo en un pulso. </p>
+                            <p class="fs-6 mb-4"> Aplicar los elementos que se utilizan para configurar una red local y el acceso a recursos de un equipo en red. </p>
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos Especificos -</h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
-                            <p class="fs-6 mb-4"> Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo. </p>
-                    
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos </h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
+                            <p class="fs-6 mb-4"> •	Utilizando el programa de Packet Tracer de Cisco, simula una red de aplicación, asignando a las computadoras las IP pertenecientes a la red 	192.168.8.0., utilizando la ventana de comandos utiliza la función ping para verificar la comunicación entre cada una de las computadoras. </p>
+                            <p class="fs-6 mb-4"><em> En una escuela se necesitan desarrollar una red de computadoras, se cuenta con 4 salas de cómputo con 12 computadoras cada uno, y una sala de administración con 7 computadoras para el personal administrativo.
+                                Los salones de cómputo se encuentran a más 100 metros de la oficina administrativa. La oficina administrativa posee un router para la conexión a internet de todos los equipos de la escuela.
+                                Utiliza repetidores y switches necesarios para desarrollar la red.
+                            </em></p>
+                            <p class="fs-6 mb-4"> •	Elabora un video donde se compruebe el funcionamiento de 5 dispositivos comunicados entre sí.</p>
+                            <p class="fs-6 mb-4"> •	Elabora un diagrama o mapa representativo de los salones con sus computadoras, así como su ubicación física. </p>
+                            <p class="fs-6 mb-4"> • Elabora una tabla comparativa con la distribución física e IP de cada equipo (computadora, repetidor, switch y router).</p>
                             
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Circuito 1 </h2>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Circuito con dos Arduinos</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/tabla.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Tabla para llenar</p>
 
-                        
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Preguntas -</h2>
+                            <p class="fs-6 mb-4"> o	¿Cuántos metros de cable de red se utilizarán?<br>
+                                o	Sin tomar en cuenta el costo de las computadoras, ¿Cuál es el costo de la infraestructura de red (cotiza el metro de cable y los equipos a utilizar)?
+                                </p>
 
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4"> Es importante destacar que, para lograr una comunicación efectiva entre ambas placas Arduino, se conectaron las tierras de ambas, garantizando así un correcto flujo de datos entre los dispositivos. Este aspecto se considera crucial para el éxito del proyecto y se mantuvo presente en todas las etapas de desarrollo y pruebas.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de pulsos:</h2>
-                        <p class="fs-6 mb-4"> Contador de pulsos:
-                            Para cumplir con el primer objetivo específico, se diseñó una función en una placa Arduino que permite enviar un número específico de pulsos a una frecuencia determinada. Esta función, denominada pulsos (int cantidad, int duración), se implementó y verificó su correcto funcionamiento utilizando un osciloscopio para analizar la señal generada.
-                            </p>
-                        <p class="fs-6 mb-4"> Asimismo, se desarrolló una segunda función en otro Arduino, con el propósito de contar el número de pulsos recibidos y mostrarlos en el monitor serial. La comunicación entre ambos Arduinos fue esencial para lograr este objetivo, y se verificó conectando un pin de cada placa para corroborar la precisión del sistema bajo distintas condiciones de frecuencia de pulsos.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos:</h2>
-                        <p class="fs-6 mb-4"> En esta etapa del proyecto, se diseñó una función en una placa Arduino que permite enviar un pulso con una duración específica en su estado alto. Esta función fue probada y su funcionamiento validado utilizando un osciloscopio para observar la señal generada.</p>
-                        <p class="fs-6 mb-4"> Para completar el segundo objetivo específico, se implementó una función en otro Arduino para medir la duración de los pulsos recibidos del primer Arduino y mostrar los resultados en el monitor serial. Esta tarea fue fundamental para analizar y comprender el tiempo de duración de los pulsos transmitidos entre las placas Arduino.</p>
-                        
+                        <p class="fs-6 mb-4"> Primero que nada se hizo un diagrama en paint para visualizar los salones y la sala de control</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Esquema.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Esquema</p>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Red en Cisco</h2>
+                        <p class="fs-6 mb-4"> Se usó Cisco para realizar la Red, se añadieron las computadoras, switch, repetidor y router necesario. Las computadoras se les asignaron distintos IP para después mandar mensajes de computadora a computadora, sala de control a los salones y viceversa.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Esquema.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 2. Red en CISCO</p>
+
+                        <p class="fs-6 mb-4"> En la siguiente tabla se muestra las configuarciones del IP y todos los componentes utilizadas</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tablaparte1.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tablapart2.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tablapart3.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 3. Tabla comparativa</p>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
