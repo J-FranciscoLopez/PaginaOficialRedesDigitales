@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 1:“Protocolo de Comunicación - Contador de pulsos y contador de tiempo”</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 6: Modelo OSI y TCP_IP</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/brobot.jpg" alt="..." />
@@ -83,57 +83,62 @@
                         </p>-->
                        <!-- <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>-->
                         
-                        <p id="intro">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4"> La práctica1 tiene como objetivo principal el conocimiento, identificación y verificación del funcionamiento de un protocolo de comunicación, focalizado en la implementación de un contador de pulsos y un contador de tiempo en un pulso. Este proyecto se desarrolla en dos partes fundamentales: el contador de pulsos y el contador de duración de pulsos. Ambos aspectos serán abordados mediante el uso de dos placas Arduino para cada función, interconectadas para demostrar la efectividad del sistema de comunicación</p>
-                        
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> 2 Arduino </p>
-                        <p class="fs-6 mb-4"> Protoboard</p>
-                        <p class="fs-6 mb-4"> Botones</p>
-                        <p class="fs-6 mb-4"> LED</p>
-                        <p id="Objetivos">
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
-                            <p class="fs-6 mb-4"> Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos y un contador de tiempo en un pulso. </p>
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos Especificos -</h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
-                            <p class="fs-6 mb-4"> Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo. </p>
-                    
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos </h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
-                            
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Circuito 1 </h2>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Circuito con dos Arduinos</p>
-
-                        
-
-                        <p id="desarrollo">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4"> Es importante destacar que, para lograr una comunicación efectiva entre ambas placas Arduino, se conectaron las tierras de ambas, garantizando así un correcto flujo de datos entre los dispositivos. Este aspecto se considera crucial para el éxito del proyecto y se mantuvo presente en todas las etapas de desarrollo y pruebas.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de pulsos:</h2>
-                        <p class="fs-6 mb-4"> Contador de pulsos:
-                            Para cumplir con el primer objetivo específico, se diseñó una función en una placa Arduino que permite enviar un número específico de pulsos a una frecuencia determinada. Esta función, denominada pulsos (int cantidad, int duración), se implementó y verificó su correcto funcionamiento utilizando un osciloscopio para analizar la señal generada.
+                        <p id="modeloOSI">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Modelo OSI -</h2>
+                        <p class="fs-6 mb-4"> El Modelo de Referencia OSI (Interconexión de Sistemas Abiertos) fue desarrollado por la Organización Internacional de Normas (ISO) como un estándar para la comunicación entre sistemas abiertos. Este modelo consta de siete capas, diseñadas siguiendo principios como la abstracción adecuada, la función claramente definida para cada capa, la elección de funciones basadas en estándares internacionales, la minimización del flujo de información a través de interfaces, y la necesidad de mantener un número suficiente de capas para evitar agrupar funciones diferentes en una misma capa, pero lo bastante pequeño para que la arquitectura sea manejable.<br>
+                            Algo a destacar del modelo OSI es que no especifica los servicios y protocolos exactos a utilizar en cada capa, sino que simplemente establece las funciones que cada capa debe realizar. Aunque la ISO ha desarrollado estándares para todas las capas, estos no forman parte del modelo de referencia en sí, sino que se publican como estándares internacionales separados. A pesar de que el modelo es ampliamente utilizado, los protocolos asociados han entrado en desuso desde hace tiempo.
                             </p>
-                        <p class="fs-6 mb-4"> Asimismo, se desarrolló una segunda función en otro Arduino, con el propósito de contar el número de pulsos recibidos y mostrarlos en el monitor serial. La comunicación entre ambos Arduinos fue esencial para lograr este objetivo, y se verificó conectando un pin de cada placa para corroborar la precisión del sistema bajo distintas condiciones de frecuencia de pulsos.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos:</h2>
-                        <p class="fs-6 mb-4"> En esta etapa del proyecto, se diseñó una función en una placa Arduino que permite enviar un pulso con una duración específica en su estado alto. Esta función fue probada y su funcionamiento validado utilizando un osciloscopio para observar la señal generada.</p>
-                        <p class="fs-6 mb-4"> Para completar el segundo objetivo específico, se implementó una función en otro Arduino para medir la duración de los pulsos recibidos del primer Arduino y mostrar los resultados en el monitor serial. Esta tarea fue fundamental para analizar y comprender el tiempo de duración de los pulsos transmitidos entre las placas Arduino.</p>
+                        
+                        <p id="capas">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Explicación de las capas: -</h2>
+                        <p class="fs-6 mb-4">1.	Capa Física: Se encarga de la transmisión de bits puros a través de un canal de comunicación. Su función principal es garantizar que los bits enviados por un lado sean recibidos correctamente por el otro lado, evitando errores de transmisión.</p>
+                        <p class="fs-6 mb-4">2. Capa de enlace de datos: se encarga de convertir un medio de transmisión en una línea libre de errores, ocultando los errores reales para que la capa de red no los detecte. Para ello, el emisor divide los datos en tramas y las transmite secuencialmente, mientras que el receptor confirma la recepción correcta de cada trama. También aborda cómo evitar la sobrecarga de datos en receptores lentos mediante mecanismos de regulación de tráfico. En redes de difusión, controla el acceso al canal compartido a través de una subcapa especial llamada subcapa de control de acceso al medio.</p>
+                        <p class="fs-6 mb-4">3. Capa de red: Se encarga de controlar la operación de la subred, determinando cómo se encaminan los paquetes desde el origen hasta el destino. Esto puede basarse en tablas estáticas o actualizarse automáticamente para evitar fallas. Puede establecer el inicio de cada conversación y adaptarse dinámicamente a la carga de la red. Además, gestiona la congestión y la calidad del servicio. En la interconexión de redes, resuelve problemas de direccionamiento, protocolos diferentes y otros desafíos para permitir la comunicación entre redes heterogéneas.</p>
+                        <p class="fs-6 mb-4">4. Capa de transporte: Tiene como función principal aceptar datos de la capa superior, dividirlos en unidades más pequeñas si es necesario, enviarlos a la capa de red y garantizar que lleguen correctamente al destino. También determina el tipo de servicio que debe proporcionar a la capa de sesión y a los usuarios de la red. Este servicio puede ser un canal punto a punto libre de errores, mensajes aislados sin garantía sobre el orden de entrega o difusión de mensajes a múltiples destinos. La capa de transporte es una capa de extremo a extremo, lo que significa que lleva los datos desde el origen hasta el destino, permitiendo la comunicación entre programas en máquinas diferentes a través de encabezados y mensajes de control. Esto contrasta con las capas inferiores, que están entre máquinas vecinas y no entre las máquinas de origen y destino.</p>
+                        <p class="fs-6 mb-4">5. Capa de sesión: Esta capa facilita a los usuarios en diferentes máquinas establecer sesiones entre ellos. Estas sesiones proporcionan servicios como control del diálogo para determinar quién transmite, manejo de tokens para evitar conflictos de operaciones críticas simultáneas y sincronización mediante puntos de referencia en transmisiones extensas para reanudar desde el último punto de referencia en caso de interrupción.</p>
+                        <p class="fs-6 mb-4">6. Capa de presentación: La capa se diferencia de las capas inferiores al enfocarse en la sintaxis y semántica de la información transmitida. Su función es facilitar la comunicación entre computadoras con diferentes representaciones internas de datos. Esto se logra mediante la definición abstracta de las estructuras de datos a intercambiar, junto con una codificación estándar para su transmisión. La capa de presentación se encarga de manejar estas estructuras de datos abstractas y facilita la interoperabilidad entre sistemas con distintas representaciones de datos. </p>
+                        <p class="fs-6 mb-4">7. Capa de aplicación: La capa incluye una variedad de protocolos utilizados por los usuarios con frecuencia. Un ejemplo es el Protocolo de Transferencia de Hipertexto (HTTP), que sustenta la World Wide Web. Cuando un navegador solicita una página web, envía la solicitud al servidor a través de HTTP, y este responde enviando la página solicitada. Además de HTTP, existen otros protocolos de aplicación utilizados para la transferencia de archivos, el envío y recepción de correos electrónicos y la lectura de noticias.</p>
+
                         
 
-                        <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                           <p class="fs-6 mb-4" >Video de evidencia</p>
-                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                            <source src="video/Circuito1.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-6 mb-4" style="text-align: center;">Video 1: práctica presencial</p>
-                        <br>
-                        
-        
+                        <p id="modelotcp">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Modelo TCP/IP-</h2>
+                        <p class="fs-6 mb-4">El modelo de referencia TCP/IP se desarrolló como una arquitectura de red para la ARPANET e Internet. Surgió de la necesidad de conectar varias redes sin problemas, ya que las redes existentes tenían dificultades para interactuar entre sí. Este modelo se basa en dos protocolos principales: el Protocolo de Control de Transmisión (TCP) y el Protocolo de Internet (IP). Inicialmente definido por Cerf y Kahn en 1974, fue refinado y estandarizado posteriormente en la comunidad de Internet. </p>
+                        <p class="fs-6 mb-4">Uno de los principales objetivos del modelo TCP/IP era la supervivencia de la red ante la pérdida de hardware, como resultado de la preocupación del Departamento de Defensa de Estados Unidos sobre posibles ataques. Se buscaba que las conexiones permanecieran intactas incluso si partes de la red fallaban, permitiendo que las conversaciones continuaran entre los hosts mientras estuvieran operativos. Además, debido a la diversidad de aplicaciones, desde la transferencia de archivos hasta la transmisión de voz en tiempo real, se requería una arquitectura flexible para adaptarse a diferentes necesidades.</p>
+   
+                        <p id="capastcp">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Explicación de las capas -</h2>
+                        <p class="fs-6 mb-4">1. Capa de enlace: Esta capa se ubica en la parte inferior del modelo y especifica los detalles de cómo se deben establecer las conexiones físicas entre los dispositivos de red, como los hosts, routers y switches. Define qué enlaces físicos, como líneas seriales o Ethernet, se utilizarán para cumplir con las necesidades de esta capa de interconexión sin conexión. Aunque se la denomina "capa", en realidad funciona como una interfaz entre los hosts y los enlaces de transmisión, permitiendo la comunicación entre dispositivos conectados a través de la red. La importancia de esta capa, radica en su función de establecer y gestionar las conexiones físicas entre los dispositivos de red. </p>
+                        <p class="fs-6 mb-4">2. Capa de interred: Esta capa es fundamental para la arquitectura de la red, ya que permite que los hosts envíen paquetes a través de cualquier red y que lleguen de manera independiente a su destino, incluso si este se encuentra en una red diferente. Los paquetes pueden llegar en un orden diferente al que fueron enviados, y las capas superiores se encargan de reordenarlos si es necesario. </p>
+                            <p class="fs-6 mb-4"> La capa de interred define un formato de paquete y un protocolo oficial llamado Protocolo de Internet (IP), así como un protocolo complementario llamado Protocolo de Mensajes de Control de Internet (ICMP) que ayuda en su funcionamiento. Su principal tarea es enrutar los paquetes IP hacia su destino, gestionando aspectos como el ruteo y la congestión. Aunque el IP no ha demostrado ser efectivo para evitar la congestión, sigue siendo un componente central en la comunicación de redes. </p>
+                            <p class="fs-6 mb-4"> La analogía con el sistema de correos convencional destaca cómo esta capa facilita la entrega de paquetes a través de múltiples redes, de manera transparente para los usuarios, similar a cómo las cartas internacionales pueden pasar por varias puertas de enlace de correo en su camino hacia el destino final.</p>
+                        <p class="fs-6 mb-4">3.	Capa de transporte: Esta capa se encuentra encima de la capa de interred y está diseñada para facilitar la comunicación entre entidades pares en nodos de origen y destino, similar a la capa de transporte en el modelo OSI.</p>
+                            <p class="fs-6 mb-4"> En esta capa se definen dos protocolos de transporte de extremo a extremo. El primero es TCP (Protocolo de Control de Transmisión), un protocolo confiable y orientado a la conexión que garantiza la entrega de datos sin errores y en orden. TCP segmenta los datos entrantes en mensajes discretos, los pasa a la capa de interred y se encarga del reensamblaje de los mensajes en el destino. Además, TCP gestiona el control de flujo para evitar que un emisor rápido sature a un receptor lento con demasiados mensajes.</p>
+                            <p class="fs-6 mb-4"> El segundo protocolo en esta capa es UDP (Protocolo de Datagrama de Usuario), un protocolo sin conexión y no confiable utilizado en aplicaciones que no requieren la fiabilidad de TCP. UDP se emplea en consultas de petición-respuesta de una sola ocasión, así como en aplicaciones donde la entrega oportuna es más importante que la precisión, como en la transmisión de voz o video. </p>
+                        <p class="fs-6 mb-4">4. Capa de aplicación: A diferencia del modelo OSI, donde estas capas están explícitamente definidas para gestionar funciones como control de diálogo, sincronización y formateo de datos, el modelo TCP/IP opta por no incluirlas. En su lugar, las funciones que normalmente se asignarían a estas capas se dejan a discreción de las aplicaciones individuales.</p>
+                        <p class="fs-6 mb-4"> La razón detrás de esta decisión radica en la observación de que, en la práctica, estas capas no se utilizan ampliamente en la mayoría de las aplicaciones. Al permitir que las aplicaciones incluyan directamente las funciones de sesión y presentación que necesitan, el modelo TCP/IP simplifica la arquitectura y reduce la complejidad, lo que ha demostrado ser eficaz en la implementación y el funcionamiento de las redes modernas.
+                        </p>
+                        <p class="fs-6 mb-4"> Para comprender mejor las diferencias y en qué situaciones funcionan mejor el modelo OSI y el modelo TCP/IP, podemos hacer una analogía con la organización de una fiesta. Imaginemos que estás planeando una fiesta y quieres asegurarte de que todo salga bien</p>
+                        <p class="fs-6 mb-4"> - Modelo OSI: En este caso, puedes dividir la organización de la fiesta en diferentes capas, cada una con funciones específicas y bien definidas. Por ejemplo:<br>
+                            1. Capa física: se encarga de preparar el lugar, como decorar el espacio y colocar mesas y sillas.<br>
+                            2. Capa de enlace: maneja las conexiones entre los elementos físicos, como conectar luces y dispositivos de sonido.<br>
+                            3. Capa de red: se encarga de dirigir a los invitados hacia la ubicación de la fiesta, asegurándose de que lleguen al lugar correcto.<br>
+                            4. Capa de transporte: garantiza que los invitados lleguen en el orden correcto y de manera segura, coordinando el transporte si es necesario.<br>
+                            5. Capa de sesión: facilita la interacción entre los invitados durante la fiesta, gestionando las conversaciones y actividades.<br>
+                            6. Capa de presentación: se encarga de la presentación de los alimentos y bebidas de manera atractiva y apetitosa.<br>
+                            7. Capa de aplicación: proporciona los servicios específicos de la fiesta, como música, entretenimiento y juegos.<br>
+                          Este enfoque funciona bien si deseas una estructura organizativa detallada y precisa para tu fiesta, donde cada aspecto está cuidadosamente planificado y gestionado.<br>
+                          - Modelo TCP/IP: En contraste, el modelo TCP/IP adopta un enfoque más simplificado y flexible, donde las funciones se organizan de manera más integrada y menos estructurada. En este caso, podrías organizar la fiesta de la siguiente manera:<br>
+                            - No hay una división clara en capas, sino que las tareas se realizan de manera más fluida y adaptable.<br>
+                            - Los invitados reciben una dirección y llegan a la fiesta siguiendo las indicaciones proporcionadas.<br>
+                            - Una vez en la fiesta, pueden interactuar libremente entre ellos, sin necesidad de una estructura rígida de conversación.<br>
+                            - La música, la comida y otras actividades se ofrecen de manera más espontánea y sin necesidad de una gestión detallada en capas.<br>
+                          
+                          Este enfoque es más adecuado si prefieres una organización menos formal y más adaptable a las circunstancias cambiantes de la fiesta, donde la improvisación y la flexibilidad son clave.<br>
+                          </p>
+                          <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/imagencapa.png" alt="..." /></figure>
+                          <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Capas</p>
+
 
                         <!--<p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
@@ -142,7 +147,7 @@
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">No usamos fuentes adicionales a las presentaciones del profesor</p>
+                        <p class="fs-6 mb-4">[1] Walteravilablog. (2017, 19 septiembre). Diferencias y similitudes del modelo OSI y TCP/IP. Walter Aguilar Informandote. https://walteravilablog.wordpress.com/2017/09/19/diferencias-y-similitudes-del-modelo-osi-y-tcpip/ </p>
                         
                        <!-- <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
