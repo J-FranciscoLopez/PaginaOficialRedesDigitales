@@ -85,44 +85,76 @@
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4"> La práctica1 tiene como objetivo principal el conocimiento, identificación y verificación del funcionamiento de un protocolo de comunicación, focalizado en la implementación de un contador de pulsos y un contador de tiempo en un pulso. Este proyecto se desarrolla en dos partes fundamentales: el contador de pulsos y el contador de duración de pulsos. Ambos aspectos serán abordados mediante el uso de dos placas Arduino para cada función, interconectadas para demostrar la efectividad del sistema de comunicación</p>
+                        <p class="fs-6 mb-4"> En el mundo del desarrollo web, el lenguaje de programación PHP ha sido una herramienta fundamental durante décadas. PHP, que inicialmente significaba "Personal Home Page" (Página Personal), pero que más tarde se redefinió como "PHP: Hypertext Preprocessor" (Procesador de Hipertexto PHP), surgió en 1994 de la mano de Rasmus Lerdorf. Desde sus humildes comienzos como un conjunto de scripts para rastrear visitas a su página web personal, PHP ha experimentado una evolución impresionante hasta convertirse en uno de los lenguajes de programación más utilizados en el desarrollo web.<br>
+                            En esta investigación, exploraremos las principales características, ventajas, desventajas y ejemplos de uso de PHP en el desarrollo web. A lo largo de los años, PHP ha demostrado ser extremadamente versátil y poderoso, permitiendo a los desarrolladores crear aplicaciones web dinámicas e interactivas. Su sintaxis sencilla y su integración con HTML facilitan la creación de sitios web dinámicos que se adaptan fácilmente a las necesidades del usuario. Además, la gran comunidad de desarrolladores de PHP ha contribuido al desarrollo de una amplia gama de bibliotecas y frameworks que facilitan y aceleran el proceso de desarrollo.<br>
+                            Sin embargo, PHP también tiene sus desventajas. A lo largo de los años, ha sido criticado por su seguridad y su manejo inconsistente de errores. Además, el hecho de que PHP sea un lenguaje interpretado puede afectar el rendimiento en comparación con lenguajes compilados como C++ o Java.<br>
+                            A pesar de sus desventajas, PHP sigue siendo una opción popular para el desarrollo web debido a su facilidad de uso, su amplia compatibilidad con diferentes sistemas operativos y servidores web, y su capacidad para integrarse fácilmente con bases de datos populares como MySQL y PostgreSQL.<br>
+                            </p>
                         
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> 2 Arduino </p>
-                        <p class="fs-6 mb-4"> Protoboard</p>
-                        <p class="fs-6 mb-4"> Botones</p>
-                        <p class="fs-6 mb-4"> LED</p>
-                        <p id="Objetivos">
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
-                            <p class="fs-6 mb-4"> Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos y un contador de tiempo en un pulso. </p>
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos Especificos -</h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
-                            <p class="fs-6 mb-4"> Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo. </p>
-                    
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos </h2>
-                            <p class="fs-6 mb-4"> Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio). </p>
-                            <p class="fs-6 mb-4"> Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor serial. </p>
-                            
-                            <h2 class="fw-bolder mb-4 mt-5 fs-5"> Circuito 1 </h2>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Circuito con dos Arduinos</p>
-
-                        
-
+                      
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4"> Es importante destacar que, para lograr una comunicación efectiva entre ambas placas Arduino, se conectaron las tierras de ambas, garantizando así un correcto flujo de datos entre los dispositivos. Este aspecto se considera crucial para el éxito del proyecto y se mantuvo presente en todas las etapas de desarrollo y pruebas.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de pulsos:</h2>
-                        <p class="fs-6 mb-4"> Contador de pulsos:
-                            Para cumplir con el primer objetivo específico, se diseñó una función en una placa Arduino que permite enviar un número específico de pulsos a una frecuencia determinada. Esta función, denominada pulsos (int cantidad, int duración), se implementó y verificó su correcto funcionamiento utilizando un osciloscopio para analizar la señal generada.
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Características Principales: -</h2>
+                        <p class="fs-6 mb-4">PHP es un lenguaje de programación de código abierto que se ejecuta del lado del servidor. Esto significa que el código PHP se procesa en el servidor web antes de que se envíe la página resultante al navegador del usuario. Algunas de las características principales de PHP incluyen:</p>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> </h2>
+                        <p class="fs-6 mb-4">- Sintaxis sencilla: La sintaxis de PHP es similar a la de otros lenguajes como C y Perl, lo que facilita su aprendizaje y uso.<br>
+                            - Amplio soporte: PHP es compatible con la mayoría de los servidores web y sistemas operativos, lo que lo hace altamente adaptable.<br>
+                            - Interacción con bases de datos: PHP ofrece una amplia gama de funciones para interactuar con bases de datos, lo que facilita la creación de aplicaciones web dinámicas.<br>
+                            - Librerías y frameworks: Existen numerosas librerías y frameworks en PHP que permiten a los desarrolladores acelerar el proceso de desarrollo y mantener un código organizado.<br>
                             </p>
-                        <p class="fs-6 mb-4"> Asimismo, se desarrolló una segunda función en otro Arduino, con el propósito de contar el número de pulsos recibidos y mostrarlos en el monitor serial. La comunicación entre ambos Arduinos fue esencial para lograr este objetivo, y se verificó conectando un pin de cada placa para corroborar la precisión del sistema bajo distintas condiciones de frecuencia de pulsos.</p>
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Contador de duración de pulsos:</h2>
-                        <p class="fs-6 mb-4"> En esta etapa del proyecto, se diseñó una función en una placa Arduino que permite enviar un pulso con una duración específica en su estado alto. Esta función fue probada y su funcionamiento validado utilizando un osciloscopio para observar la señal generada.</p>
-                        <p class="fs-6 mb-4"> Para completar el segundo objetivo específico, se implementó una función en otro Arduino para medir la duración de los pulsos recibidos del primer Arduino y mostrar los resultados en el monitor serial. Esta tarea fue fundamental para analizar y comprender el tiempo de duración de los pulsos transmitidos entre las placas Arduino.</p>
                         
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Ventajas de PHP: </h2>
+                        <p class="fs-6 mb-4">- Facilidad de aprendizaje: PHP es conocido por su simplicidad y facilidad de aprendizaje, lo que lo hace accesible incluso para principiantes en programación.<br>
+                            - Amplia comunidad: PHP cuenta con una gran comunidad de desarrolladores que contribuyen con recursos, tutoriales y soporte, lo que facilita el desarrollo y la resolución de problemas.<br>
+                            - Rápido desarrollo: Gracias a su sintaxis sencilla y las numerosas funciones predefinidas, PHP permite un desarrollo rápido de aplicaciones web.<br>
+                            - Flexibilidad: PHP es lo suficientemente flexible como para adaptarse a una amplia variedad de proyectos, desde sitios web simples hasta aplicaciones web complejas.<br>
+                            </p>
+                        
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Desventajas de PHP: </h2>
+                        <p class="fs-6 mb-4">- Seguridad: PHP ha sido criticado en el pasado por problemas de seguridad, especialmente cuando se utilizan funciones obsoletas o se escriben códigos vulnerables a ataques.<br>
+                            - Rendimiento: Aunque PHP es rápido para el desarrollo, puede ser menos eficiente en términos de rendimiento en comparación con otros lenguajes como Java o C++.<br>
+                            - Escalabilidad: Para proyectos de gran escala, PHP puede tener limitaciones en términos de escalabilidad y gestión de recursos.<br>
+                            </p>
+                        
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Ejemplos de Uso de PHP: </h2>
+                        <p class="fs-6 mb-4">- Sistemas de gestión de contenidos (CMS): Plataformas como WordPress, Joomla y Drupal están desarrolladas en PHP debido a su capacidad para gestionar contenido dinámico y personalizable.<br>
+                            - Tiendas en línea: Muchas tiendas en línea, como WooCommerce (plugin de WordPress) y Magento, utilizan PHP para crear sitios web de comercio electrónico con funcionalidades avanzadas.<br>
+                            - Redes sociales: Aplicaciones web populares como Facebook, desarrolladas inicialmente en PHP, demuestran el potencial del lenguaje para crear redes sociales complejas y escalables.<br>
+                             </p>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">1. ¿Qué es el lenguaje PHP? </h2>
+                        <p class="fs-6 mb-4">PHP es un lenguaje de programación de código abierto especialmente diseñado para el desarrollo web. Se utiliza principalmente para crear páginas web dinámicas e interactivas. </p>
+                        
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">2. ¿Para qué sirve el lenguaje PHP? </h2>
+                        <p class="fs-6 mb-4">PHP se utiliza para generar contenido dinámico en sitios web. Puede interactuar con bases de datos, procesar formularios, crear sesiones de usuario, generar contenido HTML y más. En resumen, sirve para hacer que las páginas web sean más interactivas y personalizadas. </p>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">3. ¿Cuál es la diferencia entre los archivos HTML y PHP? </h2>
+                        <p class="fs-6 mb-4">HTML es un lenguaje de marcado utilizado para crear la estructura básica de una página web, mientras que PHP es un lenguaje de programación que se utiliza para generar contenido dinámico en una página web. Los archivos HTML son estáticos, mientras que los archivos PHP pueden contener código que se ejecuta en el servidor antes de que se envíe el resultado al navegador del usuario. </p>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">4. ¿Para qué sirve la etiqueta <?php ?>? </h2>
+                        <p class="fs-6 mb-4">La etiqueta `<?php ?>` se utiliza para delimitar el código PHP dentro de un archivo HTML o PHP. Todo lo que esté dentro de estas etiquetas será interpretado como código PHP y ejecutado en el servidor. </p>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">5. ¿Cuáles son los pasos y requisitos para cargar un archivo PHP en un servidor? </h2>
+                        <p class="fs-6 mb-4">Para cargar un archivo PHP en un servidor, necesitas tener acceso al servidor web y asegurarte de que tenga soporte para PHP. Luego, simplemente carga el archivo PHP en el directorio adecuado del servidor y accede a él a través de una URL en un navegador web. </p>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">6. Elabora un programa básico "Hola mundo" con PHP, describe el funcionamiento y elementos utilizados. </h2>
+                        <p class="fs-6 mb-4">Aquí tienes un ejemplo de un programa "Hola mundo" en PHP: 
+                            
+                            "php<br>
+                            <?php<br>
+                            echo "¡Hola mundo!";<br>
+                            ?>"<br>
+                            <br>
+                        Este programa utiliza la función `echo` para imprimir el mensaje "¡Hola mundo!" en el navegador del usuario.    
+                        </p>
+
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> </h2>
+                        <p class="fs-6 mb-4"> </p>
+                        
+                        
+
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
