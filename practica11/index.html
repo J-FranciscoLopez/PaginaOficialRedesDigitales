@@ -188,7 +188,17 @@
 
                             <!-- Tipo reset -->
                             <p class="fs-6 mb-4"><b>Tipo reset:</b> Restaura los valores predeterminados del formulario. </p>
-                            <input type="reset" value="Resetear Formulario">
+                            
+                            <form action="#" method="post">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                                <br>
+                                <label for="mensaje">Apellido:</label>
+                                <textarea id="mensaje" name="mensaje" required></textarea>
+                                <br>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpiar Formulario">
+                            </form>
 
                             <br>
                             <br>
@@ -204,11 +214,11 @@
                             <!-- Tipo submit -->
                             <p class="fs-6 mb-4"><b>Tipo submit:</b> Envía los datos del formulario al servidor. </p>
                            
-                            <form action="/action_page.php">
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname" value="John"><br>
-                                <label for="lname">Last name:</label><br>
-                                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                            <form action="/action_enviar.php">
+                                <label for="fname">Nombre:</label><br>
+                                <input type="text" id="fname" name="fname" value=" "><br>
+                                <label for="lname">Apellido:</label><br>
+                                <input type="text" id="lname" name="lname" value=" "><br><br>
                                 <input type="submit" value="Enviar Formulario">
                             </form>
 
