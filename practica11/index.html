@@ -193,8 +193,25 @@
 
                             <!-- Tipo range -->
                             <p class="fs-6 mb-4"><b>Tipo range:</b> Proporciona un control deslizante para seleccionar un valor dentro de un rango específico.  </p>
+                            
+                         
+
+
                             <label for="vol">Valor de 0 a 50:</label>
                             <input type="range" id="range" name="range" min="0" max="50">
+                            <span id="valorActual">0</span>
+
+                            <script>
+                                var slider = document.getElementById("range");
+                                var output = document.getElementById("valorActual");
+
+                                output.innerHTML = slider.value;
+
+                                slider.oninput = function() {
+                                    output.innerHTML = this.value;
+                                };
+                            </script>
+
 
                             <br>
                             <br>
