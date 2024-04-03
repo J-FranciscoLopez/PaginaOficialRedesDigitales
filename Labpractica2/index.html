@@ -85,7 +85,15 @@
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En el ámbito de la informática y redes, es esencial comprender y dominar diversos aspectos relacionados con la conectividad, configuración de servidores locales y la administración de redes. Este proceso abarca desde la conexión a redes inalámbricas hasta la configuración de servicios esenciales como Apache a través de herramientas como Xampp. En este contexto, se describirán los pasos para cumplir con una serie de objetivos específicos, diseñados para proporcionar una comprensión profunda de las habilidades necesarias en un entorno de redes universitario. </p>
+                        <p class="fs-6 mb-4">
+                          
+                            Antes de adentrarnos en la práctica de configuración de una red local, es esencial comprender algunos conceptos básicos que serán fundamentales para el desarrollo y entendimiento de esta actividad. <br> En el ámbito de la informática y redes, es esencial comprender y dominar diversos aspectos relacionados con la conectividad, configuración de servidores locales y la administración de redes. Este proceso abarca desde la conexión a redes inalámbricas hasta la configuración de servicios esenciales como Apache a través de herramientas como Xampp. En este contexto, se describirán los pasos para cumplir con una serie de objetivos específicos, diseñados para proporcionar una comprensión profunda de las habilidades necesarias en un entorno de redes universitario. Una red local (LAN) es un conjunto de equipos informáticos y dispositivos conectados entre sí en un área geográfica relativamente pequeña, como puede ser un edificio. Estas redes permiten compartir recursos y datos de manera eficiente y segura.<br>
+                            La dirección IP es un número único asignado a cada dispositivo conectado a una red que utiliza el Protocolo de Internet para la comunicación. Este identificador permite que los dispositivos se localicen y comuniquen entre sí en una red.<br>
+                            XAMPP es un paquete de software gratuito que incluye el servidor web Apache, el gestor de bases de datos MariaDB, y los lenguajes de programación PHP y Perl. XAMPP facilita la creación de un entorno de servidor web local para el desarrollo y prueba de páginas y aplicaciones web.<br>
+                            El firewall o cortafuegos es un sistema de seguridad que controla el tráfico entrante y saliente en una red, basándose en un conjunto de reglas predefinidas, con el objetivo de proteger los dispositivos de accesos no autorizados.<br>
+                            Con estos conceptos claros, procederemos a detallar el desarrollo de la práctica de configuración de una red local, siguiendo los objetivos propuestos.
+                             
+                         </p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
@@ -96,35 +104,45 @@
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
                             <p class="fs-6 mb-4"> Conocer, investigar e identificar los pasos para configurar una red local y el acceso a recursos de un equipo en red.  </p>
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos Especificos -</h2>
-                            <p class="fs-6 mb-4"> •	Conecta tu computadora a la red de la universidad mediante la conexión wifi.
-                                •	Identifica la Ip de acceso a la red de tu computadora.
-                                •	En tu computadora instala Xampp para configurar un servidor local, habilita los servicios de Apache y monta un sitio web: https://www.apachefriends.org/es/index.html<br>
-                                •	Habilita el acceso al puerto 80 desde el firewall del equipo configurado como el servidor local.<br>
-                                •	Comprueba el acceso al sitio web montado en el servidor local desde 3 dispositivos distintos (para acceder es necesario estar en la misma red).<br>
-                                •	Elabora un mapa de accesos de equipos y sus respectivas IPs en la Red de las computadoras de tus demás compañeros.<br>
-                                •	Repite los mismos pasos ahora utilizando el cable directo y conectándote a la red de la universidad cableada.<br>
-                                •	Repite los mismos pasos, pero ahora con el cable cruzado entre dos equipos, configurando la IP de ambos equipos a 192.168.0.1 (un equipo) y el 192.168.0.2 (el segundo equipo).<br>
-                                 </p>
-                           
+                            <p class="fs-6 mb-4">
+                                <ul>
+                                  <li>Conecta tu computadora a la red de la universidad mediante la conexión wifi.</li>
+                                  <li>Identifica la Ip de acceso a la red de tu computadora.</li>
+                                  <li>En tu computadora instala Xampp para configurar un servidor local, habilita los servicios de Apache y monta un sitio web: <a href="https://www.apachefriends.org/es/index.html">https://www.apachefriends.org/es/index.html</a></li>
+                                  <li>Habilita el acceso al puerto 80 desde el firewall del equipo configurado como el servidor local.</li>
+                                  <li>Comprueba el acceso al sitio web montado en el servidor local desde 3 dispositivos distintos (para acceder es necesario estar en la misma red).</li>
+                                  <li>Elabora un mapa de accesos de equipos y sus respectivas IPs en la Red de las computadoras de tus demás compañeros.</li>
+                                  <li>Repite los mismos pasos ahora utilizando el cable directo y conectándote a la red de la universidad cableada.</li>
+                                  <li>Repite los mismos pasos, pero ahora con el cable cruzado entre dos equipos, configurando la IP de ambos equipos a 192.168.0.1 (un equipo) y el 192.168.0.2 (el segundo equipo).</li>
+                                </ul>
+                            </p>
+                              
 
 
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-
+                        
+                        <p class="fs-6 mb-4"> <b>Desarrollo en base a los objetivos especificos </b> </p>
+                        <p class="fs-6 mb-4"> <b>Conexión a la Red de la Universidad Mediante la Conexión WiFi </b> <br>  </p>
+                        <p class="fs-6 mb-4"> <b>Identificación de la IP de Acceso a la Red de la Computadora</b> <br>Una vez establecida la conexión a la red, se procedió a identificar la dirección IP de la computadora. Este paso fue crucial para determinar la asignación de la red y asegurar la correcta comunicación con otros dispositivos. La dirección IP fue identificada utilizando herramientas de línea de comandos disponibles en el sistema operativo, lo que permitió obtener detalles adicionales sobre la configuración de red del equipo, incluyendo la máscara de subred y la puerta de enlace.  </p>
+                        <p class="fs-6 mb-4"> <b>Instalación de XAMPP y Configuración de un Servidor Local </b> <br>La instalación de XAMPP representó un momento clave en la práctica, ya que este software permitió emular un servidor web en la computadora. Tras la instalación, se iniciaron los servicios de Apache, poniendo en marcha el servidor local. A continuación, se procedió a montar un sitio web de prueba, accesible inicialmente solo desde la computadora servidor a través de la dirección `http://localhost`. Esta configuración sirvió como base para las pruebas de conectividad y acceso desde otros dispositivos en la red.  </p>
+                        <p class="fs-6 mb-4"> <b>Habilitación del Acceso al Puerto 80 Desde el Firewall </b> <br>Para que otros dispositivos en la red pudieran acceder al sitio web montado en el servidor local, fue necesario configurar el firewall de la computadora para permitir el tráfico a través del puerto 80, el cual es utilizado por defecto por el servidor web Apache. Este ajuste implicó modificar las reglas del firewall para aceptar conexiones entrantes, garantizando así que las peticiones externas al servidor web fueran correctamente recibidas y procesadas.</p>
+                        <p class="fs-6 mb-4"> <b>Comprobación del Acceso al Sitio Web Desde Distintos Dispositivos </b> <br>Con el servidor web en funcionamiento y el firewall correctamente configurado, se procedió a verificar el acceso al sitio web de prueba desde tres dispositivos diferentes conectados a la misma red WiFi de la universidad. Este paso confirmó la exitosa configuración del servidor local y la accesibilidad del sitio web en la red local, demostrando la funcionalidad del entorno de desarrollo configurado.  </p>
+                        <p class="fs-6 mb-4"> <b>Elaboración de un Mapa de Accesos de Equipos en la Red</b> <br>Utilizando herramientas de escaneo de red, se elaboró un mapa que reflejaba los dispositivos conectados a la red local y sus respectivas direcciones IP. Este mapa proporcionó una visión clara de la estructura de la red de la universidad, identificando no solo las computadoras de los compañeros, sino también otros dispositivos conectados, lo cual facilitó la comprensión de la dinámica de la red y la identificación de posibles recursos compartidos. </p>
+                        <p class="fs-6 mb-4"> <b>Configuración de Conexión Directa y con Cable Cruzado </b> <br>Finalmente, se experimentó con la configuración de la red utilizando un cable directo y luego un cable cruzado, conectando dos equipos directamente entre sí. Este proceso implicó la asignación manual de direcciones IP estáticas (192.168.0.1 y 192.168.0.2) para cada equipo, permitiendo la comunicación directa sin necesidad de un dispositivo de red intermedio como un router o switch. Este ejercicio práctico destacó las diferencias en la configuración de la red y proporcionó una valiosa experiencia en la configuración de conexiones de red punto a punto.<br>
+                            Cada uno de estos objetivos específicos contribuyó a la comprensión y aplicación práctica de los principios fundamentales de configuración y gestión de redes locales, proporcionando una base sólida para futuros aprendizajes y exploraciones en el campo de las redes informáticas.
+                              </p>
+                        
+                           
+                        
                 
-                        <p class="fs-6 mb-4"> Para abordar el segundo objetivo específico, se diseñó una función en otro Arduino que permitiera convertir el valor binario obtenido de 8 puertos digitales en un valor entero en sistema decimal. Este Arduino recibió los datos binarios generados por el primer Arduino y los decodificó para mostrar el valor decimal resultante en el monitor serial. La comunicación entre ambas placas Arduino fue vital para el éxito de este proceso, y se aseguró conectando las tierras de ambas, como se indica en la nota.</p>
-                        <p class="fs-6 mb-4"> La interacción entre los dos Arduinos permitió demostrar el correcto funcionamiento del sistema de comunicación y la precisión en la conversión de valores analógicos a binarios, así como la decodificación inversa de binario a decimal. La conexión entre las tierras de los Arduinos garantizó una comunicación efectiva y estable entre los dispositivos, facilitando el intercambio de datos necesario para llevar a cabo las operaciones de conversión de manera exitosa.</p>
+                        <p class="fs-6 mb-4">
+                            <ul>
+                                <li></li>
 
-                        
-                        <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                           <p class="fs-6 mb-4" >Video de evidencia</p>
-                        <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                            <source src="video/Circuito1.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-6 mb-4" style="text-align: center;">Video 1: práctica presencial</p>
-                        <br>
-                        
+                            </ul>
+                        </p>
+                   
         
 
                         <!--<p id="conclusiones">
