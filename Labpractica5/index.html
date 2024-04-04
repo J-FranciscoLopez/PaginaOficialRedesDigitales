@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 4: Introducción a la pagina WEB</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 5: ESP32 Entradas y Salidas Digitales</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/brobot.jpg" alt="..." />
@@ -85,22 +85,40 @@
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4"> En el ámbito del desarrollo web, entender cómo funciona la creación de una página web es fundamental. En esta práctica, se enfocará en utilizar GitHub para construir una página web simple con un formato mínimo. El objetivo principal es comprender los conceptos básicos de desarrollo web y aprender cómo armar una página utilizando herramientas como GitHub. La página web resultante será muy sencilla, con un solo título, unos pocos subtitulos, un breve texto, una imagen y un enlace a la página de búsqueda de Google. Además, se explorará la posibilidad de acceder a una segunda página con un formato similar, pero con contenido diferente.</p>
+                        <p class="fs-6 mb-4"> </p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> GitHub</p>
+                        <p class="fs-6 mb-4">
+                            <ul>
+                                <li>Node MCU ESP8266 o ESP32 </li>
+                                <li>LED, resistencia de 220 Ohms </li>
+                                <li>4 Botones y 4 resistencias de 1Khom </li>
+                                <li>Protoboard y cables  </li>
+                            </ul>
+
+                        </p>
                         <p class="fs-6 mb-4"> HTML</p>
-                        <p class="fs-6 mb-4"> CSS</p>
+                        <p class="fs-6 mb-4"> ESP32</p>
                         
 
                         <p id="Objetivos">
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
-                            <p class="fs-6 mb-4"> El objetivo general de esta práctica es comprender y experimentar con el proceso de creación de una página web utilizando GitHub. Se busca obtener una comprensión básica de los conceptos fundamentales del desarrollo web y familiarizarse con las herramientas y tecnologías involucradas en la creación de sitios web simples. </p>
+                            <p class="fs-6 mb-4"> Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo NodeMCU ESP8266 o ESP32. </p>
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos Especificos -</h2>
-                            <p class="fs-6 mb-4"> Crear una página web simple utilizando HTML y CSS. </p>
-                            <p class="fs-6 mb-4"> Aprender a utilizar GitHub para alojar y gestionar proyectos de desarrollo web. </p>
-                            <p class="fs-6 mb-4"> Experimentar con la estructura y el diseño de una página web básica.  </p>
+                            <p class="fs-6 mb-4"> 
+                                <ul>
+                                    <li>Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias.  </li>
+                                    <li>Revisar el pinout y los GPIO disponibles para el uso del NodeMCU seleccionado. </li>
+                                    <li>Desarrollar un programa de encendido de un LED mediante programación. </li>
+                                    <li>Desarrollar un programa de apagado de un LED mediante programación.</li>
+                                    <li>Desarrollar un programa de encendido y apagado de un LED mediante retardos. </li>
+                                    <li>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones. </li>
+                                    <li>Desarrollar un sistema de encendido y apagado de un LED usando dos botones y una condicional OR. </li>
+                                    <li>Desarrollar un sistema de encendido y apagado de un LED con dos botones y una condicional AND</li> <br>
+                                    <li>NOTA: Insertar en el reporte de práctica el diagrama de conexión utilizando algún software de representación de ensamble como TinkerCAD o Fritzing, agregar imágenes del código de Arduino y un video de prueba de cada uno de los objetivos. </li>            
+                                </ul>
+                            </p>
                     
                             <h2 class="fw-bolder mb-4 mt-5 fs-5"> Circuito 1 </h2>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
@@ -110,16 +128,16 @@
 
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4"> Para llevar a cabo esta práctica, se utilizará GitHub, una plataforma de desarrollo colaborativo que permite gestionar proyectos de software y alojar el código de manera gratuita. El proceso se dividirá en los siguientes pasos:<br>
-
-                            1. Configuración de GitHub: Se creará un nuevo repositorio en GitHub para el proyecto de la página web. Esto proporcionará un espacio para alojar los archivos HTML, CSS y otros recursos necesarios.<br>
-                            
-                            2. Creación de archivos HTML y CSS: Se escribirán los archivos HTML y CSS necesarios para construir la estructura básica de la página web. Esto incluirá el título, subtitulos, texto breve, imagen y enlace a la página de búsqueda de Google. El diseño será simple y minimalista, centrándose en comprender los conceptos básicos de la creación de páginas web.<br>
-                            
-                            3. Implementación de la funcionalidad de navegación: Se agregará un enlace en el breve texto que permita acceder a una segunda página con un contenido diferente, pero con el mismo formato que la original. Esto ayudará a explorar cómo funciona la navegación entre páginas web.<br>
-                            
-                            4. Prueba y ajustes: Se realizarán pruebas para asegurarse de que la página web se vea correctamente en diferentes dispositivos y navegadores. Se realizarán ajustes según sea necesario para mejorar la apariencia y la funcionalidad.<br>
-                            </p>
+                        <p class="fs-6 mb-4"> Para realizar esta práctica primero es conseguir los materiales y armar el circuito en el protobord. Tambié ir realizando el código en Arduino IDE
+                            <ul>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                            </ul>    
+                        
+                        
+                        </p>
                         
 
                         <p id="resultados">
