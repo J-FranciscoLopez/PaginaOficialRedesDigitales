@@ -11429,7 +11429,7 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
-
+ 
 .tabla_sensorinfrarrojo {
   border: 2px solid red; /* Borde de 2px de ancho y color rojo */
 }
@@ -11441,3 +11441,4 @@ html {
 .tabla_sensorultrasonico {
   border: 2px solid blue; /* Borde de 2px de ancho y color rojo */
 }
+
