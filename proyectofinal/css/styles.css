@@ -17,7 +17,9 @@ table {
 .tabla_titulo {
     background-color: #000000; /* Negro */
     color: #ff0000; /* Rojo */
+    height: 33px;
 }
+
 
 .titulo {
     margin: 0;
@@ -26,9 +28,13 @@ table {
 /* Estilos comunes para las tablas de sensores */
 .tabla_sensorinfrarrojo, .tabla_sensorultrasonico, .tabla_sensornivel {
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    height: 177px;
+    border-color: #707070;
+    border-width: 1px;
+    border-style: solid;
+    justify-content: center;
 }
+
 
 /* Estilos para los textos grandes */
 .texto_grande {
