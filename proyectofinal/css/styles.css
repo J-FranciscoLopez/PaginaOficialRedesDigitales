@@ -45,8 +45,8 @@ table {
 
 /* Estilos para los iframes */
 .iframe_dato {
-    width: 100%;
-    height: 100px;
+    width: 50%;
+    height: 50px;
     border: none;
 }
 
