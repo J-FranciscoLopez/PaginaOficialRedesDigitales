@@ -15,8 +15,8 @@ table {
 
 /* Estilos para la tabla de título */
 .tabla_titulo {
-    background-color: #003366; /* Azul oscuro de Ibero */
-    color: white;
+    background-color: #000000; /* Negro */
+    color: #ff0000; /* Rojo */
 }
 
 .titulo {
@@ -32,7 +32,7 @@ table {
 
 /* Estilos para los textos grandes */
 .texto_grande {
-    color: #003366;
+    color: #ff0000; /* Rojo */
     margin: 10px 0;
 }
 
