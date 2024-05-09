@@ -1,4 +1,17 @@
 /* Estilos generales */
+.titulo{
+    font-size:20px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: white;
+}
+
+/* Estilos para la tabla de título */
+.tabla_titulo {
+    background-color: #000000; /* Negro */
+    color: #ff0000; /* Rojo */
+    height: 33px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -11,18 +24,6 @@ table {
     width: 100%;
     margin: 30px auto;
     border-collapse: collapse;
-}
-
-/* Estilos para la tabla de título */
-.tabla_titulo {
-    background-color: #000000; /* Negro */
-    color: #ff0000; /* Rojo */
-    height: 33px;
-}
-
-
-.titulo {
-    margin: 0;
 }
 
 /* Estilos comunes para las tablas de sensores */
@@ -38,8 +39,11 @@ table {
 
 /* Estilos para los textos grandes */
 .texto_grande {
-    color: #ff0000; /* Rojo */
-    margin: 10px 0;
+    font-size:20px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: #ff0000;
+    
+    line-height: 0;
 }
 
 /* Estilos para los textos menores */
@@ -51,9 +55,9 @@ table {
 
 /* Estilos para los iframes */
 .iframe_dato {
-    width: 50%;
-    height: 50px;
-    border: none;
+    border:0px solid black;
+    width:60px;
+    height:50px;
 }
 
 
