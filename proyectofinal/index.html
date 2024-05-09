@@ -21,9 +21,15 @@
                 background-color: #fff;
                 box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             }
-            img {
+            img.logo {
                 width: 80px;
                 height: auto;
+            }
+            img.sensor-img {
+                width: 100%;
+                height: auto;
+                max-height: 200px; /* Adjust the max-height as needed */
+                object-fit: cover; /* This will ensure the image covers the area well */
             }
             .titulo {
                 color: #4a67e8;
@@ -51,7 +57,7 @@
                 table {
                     width: 100%;
                 }
-                img {
+                img.logo {
                     width: 50px;
                 }
                 .iframe_dato {
@@ -64,7 +70,7 @@
         <table>
             <tr>
                 <td align="center">
-                    <img src="img/logoibero.jpeg">
+                    <img src="img/logoibero.jpeg" class="logo">
                 </td>
             </tr>
         </table>
@@ -84,6 +90,7 @@
                         <tr>
                             <td>
                                 <h3 class="texto_grande">Temperatura</h3>
+                                <img src="img/sample-image.jpg" class="sensor-img">
                                 <iframe class="iframe_dato" src="https://agraphic-routines.000webhostapp.com/bebedero/"></iframe>
                                 <p class="texto_min">Ultima actualización:</p>
                             </td>
@@ -94,6 +101,7 @@
                         <tr>
                             <td>
                                 <h3 class="texto_grande">Comdero</h3>
+                                <img src="img/sample-image.jpg" class="sensor-img">
                                 <iframe class="iframe_dato" src="https://agraphic-routines.000webhostapp.com/comederoservo/"></iframe>
                                 <p class="texto_min">Ultima actualización:</p>
                             </td>
@@ -104,6 +112,7 @@
                         <tr>
                             <td>
                                 <h3 class="texto_grande">Bebedero</h3>
+                                <img src="img/sample-image.jpg" class="sensor-img">
                                 <iframe class="iframe_dato" src="https://agraphic-routines.000webhostapp.com/bebedero/"></iframe>
                                 <p class="texto_min">Ultima actualización:</p>
                             </td>
