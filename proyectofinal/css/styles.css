@@ -29,11 +29,12 @@ img.sensor-img {
     object-fit: cover; /* This will ensure the image covers the area well */
 }
 .titulo {
-    color: #4a67e8;
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 10px;
     font-size: 1.5em;
+    background-color: #000000;
 }
 .texto_grande {
     color: #424242;
